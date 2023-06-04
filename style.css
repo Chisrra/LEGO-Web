@@ -1,0 +1,296 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #0E57B3;
+    padding: 20px 0;
+    height: 30vh;
+}
+
+.caja {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items:center ;
+}
+
+.caja > div, .caja > nav{
+    display: inline-block;
+}
+
+#logo {
+    width: 40%;
+    height: 80%;
+    background-image: url('imagenes/logo.png');
+    background-size: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+   margin-left: 10%;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 1px 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li svg {
+    width: 50%;
+    height: 60%;
+    margin: 20px auto;
+}
+
+.productos li:hover {
+    border-color: #c78c19;
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    background-size: contain;
+    background-position: center center;
+    padding: 40px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form {
+    margin: 40px;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset {
+    margin-top: 30px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner {
+    width: 100%;
+    height: 40vh;
+    background-image: url("banner/banner.jpg");
+    background-size: contain;
+}
+
+.principal {
+    background: #FEFEFE;
+    width:70%;
+    margin: 3em auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 12%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fdfdfd, #9299c5)
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #9299c5;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0px auto 60px;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: "★"
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    width: 40%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 80vw;
+    margin: 1em auto;
+}
+
+@media screen and (max-width:480px) {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .caja,
+    .principal,
+    .mapa-contenido,
+    .contenido-diferenciales,
+    .video {
+        width: auto;
+    }
+
+    .lista-diferenciales,
+    .imagen-diferenciales {
+        width: 100%;
+    }
+
+}
